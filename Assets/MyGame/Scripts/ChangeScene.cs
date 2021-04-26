@@ -7,11 +7,11 @@ public class ChangeScene : MonoBehaviour
 {
     public void ChangeToStartScene ()
     {
-        SceneManager.LoadScene("SampleScene"); 
+        SceneManager.LoadScene("WelcomeScene"); 
     }
 
     public void ChangeToCalculator()
     {
-        SceneManager.LoadScene("SecondScene");
+        SceneManager.LoadScene("MainScene");
     }
 }

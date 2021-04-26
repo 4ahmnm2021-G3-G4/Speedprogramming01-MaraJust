@@ -449,6 +449,8 @@ GameObject:
   - component: {fileID: 350085881}
   - component: {fileID: 350085884}
   - component: {fileID: 350085885}
+  - component: {fileID: 350085886}
+  - component: {fileID: 350085887}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -545,11 +547,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ed8c8455e7474f2bb1db712d3a54c33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &350085886
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350085880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2d94abd0fab2b4f35a76711d4c6113e0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
   NumberA: 0
   NumberB: 0
   resultText: {fileID: 355609137}
   inputA: {fileID: 1639332634}
   inputB: {fileID: 1967011874}
+--- !u!114 &350085887
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 350085880}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46968c598168146bbbcca3f7f44f52e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &355609135
 GameObject:
   m_ObjectHideFlags: 0
@@ -711,7 +737,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 350085885}
+      - m_Target: {fileID: 350085886}
         m_MethodName: CalculateNumbers
         m_Mode: 1
         m_Arguments:
@@ -1171,7 +1197,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 350085884}
+      - m_Target: {fileID: 350085887}
         m_MethodName: ChangeToStartScene
         m_Mode: 1
         m_Arguments:

@@ -212,7 +212,7 @@ GameObject:
   - component: {fileID: 326350631}
   - component: {fileID: 326350630}
   m_Layer: 5
-  m_Name: NextButton (2)
+  m_Name: OderButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -417,6 +417,7 @@ GameObject:
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
   - component: {fileID: 519420030}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -501,6 +502,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 46968c598168146bbbcca3f7f44f52e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &539916864
 GameObject:
   m_ObjectHideFlags: 0
@@ -513,6 +526,7 @@ GameObject:
   - component: {fileID: 539916867}
   - component: {fileID: 539916866}
   - component: {fileID: 539916865}
+  - component: {fileID: 539916869}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -605,6 +619,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &539916869
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 539916864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 062b85b5ebc6f410c92d951e1abd3a2b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Toggle1: {fileID: 1428616332}
+  Toggle2: {fileID: 1872848871}
+  Toggle1Text: {fileID: 1002238670}
+  Toggle2Text: {fileID: 1259073774}
+  Und: {fileID: 1383342147}
+  Oder: {fileID: 326350630}
 --- !u!1 &640156567
 GameObject:
   m_ObjectHideFlags: 0
@@ -920,7 +952,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 519420030}
+      - m_Target: {fileID: 519420033}
         m_MethodName: ChangeToCalculator
         m_Mode: 1
         m_Arguments:
@@ -1294,7 +1326,7 @@ GameObject:
   - component: {fileID: 1383342148}
   - component: {fileID: 1383342147}
   m_Layer: 5
-  m_Name: NextButton (1)
+  m_Name: UndButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1424,7 +1456,7 @@ GameObject:
   - component: {fileID: 1428616331}
   - component: {fileID: 1428616332}
   m_Layer: 5
-  m_Name: Toggle
+  m_Name: Toggle1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1586,7 +1618,7 @@ GameObject:
   - component: {fileID: 1872848870}
   - component: {fileID: 1872848871}
   m_Layer: 5
-  m_Name: Toggle (1)
+  m_Name: Toggle2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
