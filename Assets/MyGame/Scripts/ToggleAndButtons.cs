@@ -11,6 +11,8 @@ public class ToggleAndButtons : MonoBehaviour
     public Text Toggle1Text;
     public Text Toggle2Text;
 
+    public Text ButtonText;
+
     public Button Und;
     public Button Oder;
 
@@ -18,31 +20,70 @@ public class ToggleAndButtons : MonoBehaviour
     void Start()
     {
         
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        CheckToggles();
     }
 
     public void CheckToggles ()
     {
+        if (Toggle1.isOn == true)
+        {
+            Toggle1Text.text = "Wahr";
+        } else
+        {
+            Toggle1Text.text = "Falsch";
+        }
 
+        if (Toggle2.isOn == true)
+        {
+            Toggle2Text.text = "Wahr";
+        }
+        else
+        {
+            Toggle2Text.text = "Falsch";
+        }
     }
 
     public void UndButt ()
     {
+        Oder.interactable = false;
+
+        if (Toggle1.isOn && Toggle2.isOn)
+        {
+            ButtonText.text = "Wahr";
+        } else
+        {
+            ButtonText.text = "Falsch";
+        }
+
+        Oder.interactable = true;
 
     }
 
     public void OdButt ()
     {
+        Und.interactable = false;
 
+        if ((Toggle1.isOn == true) && (Toggle2.isOn == false))
+        {
+            ButtonText.text = "Wahr";
+
+        } else if ((Toggle1.isOn == false) && (Toggle2.isOn == true))
+        {
+            ButtonText.text = "Wahr";
+        }
+        else
+        {
+            ButtonText.text = "Falsch";
+        }
+
+        Und.interactable = true;
     }
 
-    public void ChangeLabels ()
-    {
-
-    }
+    
 }
