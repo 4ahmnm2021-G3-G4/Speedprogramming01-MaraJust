@@ -12,21 +12,10 @@ public class AddNumbers : MonoBehaviour
     public InputField inputA;
     public InputField inputB;
 
-    // Start is called before the first frame update
-    void Start()
-    {
-      
-    }
-
-    // Update is called once per frame
-    void Update()
+    public void CalculateNumbers ()
     {
         NumberA = int.Parse(inputA.text);
         NumberB = int.Parse(inputB.text);
-    }
-
-    public void CalculateNumbers ()
-    {
         var result = NumberA + NumberB;
         resultText.text = "= " + result.ToString();
         

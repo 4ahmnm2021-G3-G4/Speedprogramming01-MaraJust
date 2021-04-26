@@ -69,17 +69,13 @@ public class ToggleAndButtons : MonoBehaviour
     {
         Und.interactable = false;
 
-        if ((Toggle1.isOn == true) && (Toggle2.isOn == false))
-        {
-            ButtonText.text = "Wahr";
-
-        } else if ((Toggle1.isOn == false) && (Toggle2.isOn == true))
-        {
-            ButtonText.text = "Wahr";
-        }
-        else
+        if ((Toggle1.isOn == false) && (Toggle2.isOn == false))
         {
             ButtonText.text = "Falsch";
+
+        } else 
+        {
+            ButtonText.text = "Wahr";
         }
 
         Und.interactable = true;
